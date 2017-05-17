@@ -52,6 +52,11 @@
 // **** Implementation of the free functions ----------------------
 #include <boost/format/free_funcs.hpp>
 
+#if __cplusplus >= 201103L
+// **** Literals for the format strings ---------------------------
+#include <boost/format/literals.hpp>
+#endif
+
 
 // *** Undefine 'local' macros :
 #include <boost/format/detail/unset_macros.hpp>

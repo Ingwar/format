@@ -38,6 +38,10 @@ namespace boost {
                   
     } // namespace io
 
+#if __cplusplus >= 201103L
+    format operator"" _fmt(const char* format_string, std::size_t unused_format_string_length);
+#endif
+
 } // namespace boost
 
 #endif // BOOST_FORMAT_FWD_HPP
