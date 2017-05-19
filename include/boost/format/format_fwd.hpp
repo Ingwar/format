@@ -39,7 +39,13 @@ namespace boost {
     } // namespace io
 
 #if __cplusplus >= 201103L
+
+inline namespace format_literals {
+
     format operator"" _fmt(const char* format_string, std::size_t unused_format_string_length);
+
+} // namespace format_literals
+
 #endif
 
 } // namespace boost

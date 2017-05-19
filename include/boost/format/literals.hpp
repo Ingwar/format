@@ -21,9 +21,13 @@
 
 namespace boost {
 
+inline namespace format_literals {
+
 format operator ""_fmt(const char *format_string, const std::size_t unused_format_string_length) {
     return format(format_string);
 }
+
+} // namespace format_literals
 
 } // namespace boost
 
